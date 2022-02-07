@@ -1,0 +1,8 @@
+D:\github-repositories\ProgrammingLabs2semester\FirstLab1\bin\Debug\FirstLab1.exe.config
+D:\github-repositories\ProgrammingLabs2semester\FirstLab1\bin\Debug\FirstLab1.exe
+D:\github-repositories\ProgrammingLabs2semester\FirstLab1\bin\Debug\FirstLab1.pdb
+D:\github-repositories\ProgrammingLabs2semester\FirstLab1\obj\Debug\FirstLab1.csproj.AssemblyReference.cache
+D:\github-repositories\ProgrammingLabs2semester\FirstLab1\obj\Debug\FirstLab1.csproj.SuggestedBindingRedirects.cache
+D:\github-repositories\ProgrammingLabs2semester\FirstLab1\obj\Debug\FirstLab1.csproj.CoreCompileInputs.cache
+D:\github-repositories\ProgrammingLabs2semester\FirstLab1\obj\Debug\FirstLab1.exe
+D:\github-repositories\ProgrammingLabs2semester\FirstLab1\obj\Debug\FirstLab1.pdb

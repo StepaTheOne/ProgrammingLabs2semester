@@ -1,0 +1,15 @@
+D:\github-repositories\ProgrammingLabs2semester\FirstLab\bin\Debug\net6.0\FirstLab.exe
+D:\github-repositories\ProgrammingLabs2semester\FirstLab\bin\Debug\net6.0\FirstLab.deps.json
+D:\github-repositories\ProgrammingLabs2semester\FirstLab\bin\Debug\net6.0\FirstLab.runtimeconfig.json
+D:\github-repositories\ProgrammingLabs2semester\FirstLab\bin\Debug\net6.0\FirstLab.dll
+D:\github-repositories\ProgrammingLabs2semester\FirstLab\bin\Debug\net6.0\ref\FirstLab.dll
+D:\github-repositories\ProgrammingLabs2semester\FirstLab\bin\Debug\net6.0\FirstLab.pdb
+D:\github-repositories\ProgrammingLabs2semester\FirstLab\obj\Debug\net6.0\FirstLab.csproj.AssemblyReference.cache
+D:\github-repositories\ProgrammingLabs2semester\FirstLab\obj\Debug\net6.0\FirstLab.GeneratedMSBuildEditorConfig.editorconfig
+D:\github-repositories\ProgrammingLabs2semester\FirstLab\obj\Debug\net6.0\FirstLab.AssemblyInfoInputs.cache
+D:\github-repositories\ProgrammingLabs2semester\FirstLab\obj\Debug\net6.0\FirstLab.AssemblyInfo.cs
+D:\github-repositories\ProgrammingLabs2semester\FirstLab\obj\Debug\net6.0\FirstLab.csproj.CoreCompileInputs.cache
+D:\github-repositories\ProgrammingLabs2semester\FirstLab\obj\Debug\net6.0\FirstLab.dll
+D:\github-repositories\ProgrammingLabs2semester\FirstLab\obj\Debug\net6.0\ref\FirstLab.dll
+D:\github-repositories\ProgrammingLabs2semester\FirstLab\obj\Debug\net6.0\FirstLab.pdb
+D:\github-repositories\ProgrammingLabs2semester\FirstLab\obj\Debug\net6.0\FirstLab.genruntimeconfig.cache
