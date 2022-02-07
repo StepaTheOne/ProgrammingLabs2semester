@@ -19,22 +19,22 @@ namespace FirstLab1
             {
                 ans *= a;
             }
-            Console.WriteLine(ans);
+            Console.WriteLine($"Ответ: {ans}");
         }
 
         static void nTOx() //второго соответственно
         {
-            int n = Convert.ToInt32(Console.ReadLine());
-            string strn = n.ToString();
-            char temp = strn[strn.Length - 1];
-            strn = strn.Remove(strn.Length - 1);
-            strn = strn.Insert(1, Convert.ToString(temp));
-            Console.WriteLine(strn);
+            Console.Write("Введите n: ");
+            string n = Console.ReadLine();
+            char temp = n[n.Length - 1];
+            n = n.Remove(n.Length - 1);
+            n = n.Insert(1, Convert.ToString(temp));
+            Console.WriteLine($"Изначальное x: {n}");
         }
 
         static void Main(string[] args) //выбор какое задание выполнять.
         {
-            Console.WriteLine("Задание: ");
+            Console.Write("Задание: ");
             int t = Convert.ToInt32(Console.ReadLine());
             switch (t)
             {
@@ -48,6 +48,7 @@ namespace FirstLab1
                     Console.WriteLine("2 задания. 1 или 2.");
                     break;
             }
+            Console.Write("Нажмите любую клавишу... ");
             Console.ReadKey();
         }
     }
