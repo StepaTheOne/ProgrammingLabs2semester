@@ -8,16 +8,16 @@ namespace FirstLab1
 {
     internal class Program
     {
-        static void power() //программа первого подзадания
+        static void NumPower() //программа первого подзадания
         {
             Console.Write("Введите число: ");
-            double num = Convert.ToDouble(Console.ReadLine());
-            double result = num;
+            double Number = Convert.ToDouble(Console.ReadLine());
+            double result = Number;
             Console.Write("Введите степень: ");
-            int power = Convert.ToInt32(Console.ReadLine());
-            for (int i = 1; i < power; ++i)
+            int Power = Convert.ToInt32(Console.ReadLine());
+            for (int PowerIndex = 1; PowerIndex < Power; ++PowerIndex)
             {
-                result *= num;
+                result *= Number;
             }
             Console.WriteLine($"Ответ: {result}");
         }
@@ -26,9 +26,9 @@ namespace FirstLab1
         {
             Console.Write("Введите n: ");
             string SrcNum = Console.ReadLine();
-            char temp = SrcNum[SrcNum.Length - 1];
+            char SecondDigit = SrcNum[SrcNum.Length - 1];
             SrcNum = SrcNum.Remove(SrcNum.Length - 1);
-            SrcNum = SrcNum.Insert(1, Convert.ToString(temp));
+            SrcNum = SrcNum.Insert(1, Convert.ToString(SecondDigit));
             Console.WriteLine($"Изначальное x: {SrcNum}");
         }
 
@@ -39,7 +39,7 @@ namespace FirstLab1
             switch (Task)
             {
                 case 1:
-                    power();
+                    NumPower();
                     break;
                 case 2:
                     MoveN();
