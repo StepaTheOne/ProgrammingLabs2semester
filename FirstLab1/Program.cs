@@ -10,39 +10,39 @@ namespace FirstLab1
     {
         static void power() //программа первого подзадания
         {
-            Console.Write("Введите a: ");
-            double a = Convert.ToDouble(Console.ReadLine());
-            double ans = a;
-            Console.Write("Введите n: ");
-            int n = Convert.ToInt32(Console.ReadLine());
-            for (int i = 1; i < n; ++i)
+            Console.Write("Введите число: ");
+            double num = Convert.ToDouble(Console.ReadLine());
+            double result = num;
+            Console.Write("Введите степень: ");
+            int power = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i < power; ++i)
             {
-                ans *= a;
+                result *= num;
             }
-            Console.WriteLine($"Ответ: {ans}");
+            Console.WriteLine($"Ответ: {result}");
         }
 
-        static void nTOx() //второго соответственно
+        static void MoveN() //второго соответственно
         {
             Console.Write("Введите n: ");
-            string n = Console.ReadLine();
-            char temp = n[n.Length - 1];
-            n = n.Remove(n.Length - 1);
-            n = n.Insert(1, Convert.ToString(temp));
-            Console.WriteLine($"Изначальное x: {n}");
+            string SrcNum = Console.ReadLine();
+            char temp = SrcNum[SrcNum.Length - 1];
+            SrcNum = SrcNum.Remove(SrcNum.Length - 1);
+            SrcNum = SrcNum.Insert(1, Convert.ToString(temp));
+            Console.WriteLine($"Изначальное x: {SrcNum}");
         }
 
         static void Main(string[] args) //выбор какое задание выполнять.
         {
             Console.Write("Задание: ");
-            int t = Convert.ToInt32(Console.ReadLine());
-            switch (t)
+            int Task = Convert.ToInt32(Console.ReadLine());
+            switch (Task)
             {
                 case 1:
                     power();
                     break;
                 case 2:
-                    nTOx();
+                    MoveN();
                     break;
                 default:
                     Console.WriteLine("2 задания. 1 или 2.");
