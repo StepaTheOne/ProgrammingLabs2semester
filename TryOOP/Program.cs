@@ -1,7 +1,9 @@
 ﻿using System;
 
-namespace Lab3
+namespace TryOOP
 {
+
+
     internal class Program
     {
         static void Main(string[] args)
