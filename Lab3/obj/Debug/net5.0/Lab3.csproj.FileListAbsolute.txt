@@ -1,0 +1,16 @@
+D:\github-repositories\ProgrammingLabs2semester\Lab3\bin\Debug\net5.0\Lab3.exe
+D:\github-repositories\ProgrammingLabs2semester\Lab3\bin\Debug\net5.0\Lab3.deps.json
+D:\github-repositories\ProgrammingLabs2semester\Lab3\bin\Debug\net5.0\Lab3.runtimeconfig.json
+D:\github-repositories\ProgrammingLabs2semester\Lab3\bin\Debug\net5.0\Lab3.runtimeconfig.dev.json
+D:\github-repositories\ProgrammingLabs2semester\Lab3\bin\Debug\net5.0\Lab3.dll
+D:\github-repositories\ProgrammingLabs2semester\Lab3\bin\Debug\net5.0\ref\Lab3.dll
+D:\github-repositories\ProgrammingLabs2semester\Lab3\bin\Debug\net5.0\Lab3.pdb
+D:\github-repositories\ProgrammingLabs2semester\Lab3\obj\Debug\net5.0\Lab3.csproj.AssemblyReference.cache
+D:\github-repositories\ProgrammingLabs2semester\Lab3\obj\Debug\net5.0\Lab3.GeneratedMSBuildEditorConfig.editorconfig
+D:\github-repositories\ProgrammingLabs2semester\Lab3\obj\Debug\net5.0\Lab3.AssemblyInfoInputs.cache
+D:\github-repositories\ProgrammingLabs2semester\Lab3\obj\Debug\net5.0\Lab3.AssemblyInfo.cs
+D:\github-repositories\ProgrammingLabs2semester\Lab3\obj\Debug\net5.0\Lab3.csproj.CoreCompileInputs.cache
+D:\github-repositories\ProgrammingLabs2semester\Lab3\obj\Debug\net5.0\Lab3.dll
+D:\github-repositories\ProgrammingLabs2semester\Lab3\obj\Debug\net5.0\ref\Lab3.dll
+D:\github-repositories\ProgrammingLabs2semester\Lab3\obj\Debug\net5.0\Lab3.pdb
+D:\github-repositories\ProgrammingLabs2semester\Lab3\obj\Debug\net5.0\Lab3.genruntimeconfig.cache
