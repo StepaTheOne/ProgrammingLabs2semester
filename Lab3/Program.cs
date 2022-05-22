@@ -6,9 +6,8 @@ namespace Lab3
     {
         static void Main(string[] args)
         {
-            int n = 3;
-            Matrix matrix = new Matrix(n);
-            matrix.PrintMatrix();
+            Menu menu = new Menu();
+            menu.Instance.ShowMenu();
         }
     }
 }
