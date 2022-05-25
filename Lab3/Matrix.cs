@@ -11,12 +11,24 @@ namespace Lab3
         Random rnd = new Random();
         public int[,] Matrix { get; set; }
         public int Size { get; set; }
-        public SquareMatrix() { Size = rnd.Next(2, 4); } //че сделал не уверен если ч.
+        public SquareMatrix() 
+        {
+            Size = rnd.Next(2, 4);
+            Matrix = new int[Size,Size];
+            Create(); 
+        } //че сделал не уверен если ч.
 
         public SquareMatrix(int n)
         {
             Size = n;
             Matrix = new int[Size,Size];
+        }
+
+        public SquareMatrix(int n, int[,] matrix)
+        {
+            Size = n;
+            Matrix = new int[Size, Size];
+            Matrix = matrix;
         }
 
         public int this[int iRaw, int iCol]
@@ -33,9 +45,9 @@ namespace Lab3
 
         public void Create()
         {
-            for (int iRow = 0; iRow < Size; iRow++)
+            for (int iRow = 0; iRow < Size; ++iRow)
             {
-                for (int iCol = 0; iCol < Size; iCol++)
+                for (int iCol = 0; iCol < Size; ++iCol)
                 {
                     Matrix[iRow, iCol] = rnd.Next(0, 10);
                 }
@@ -45,14 +57,21 @@ namespace Lab3
 
         public void PrintMatrix()
         {
-            for (int iRow = 0; iRow < Size; iRow++)
+            for (int iRow = 0; iRow < Size; ++iRow)
             {
-                for (int iCol = 0; iCol < Size; iCol++)
+                for (int iCol = 0; iCol < Size; ++iCol)
                 {
                     Console.Write(Matrix[iRow, iCol] + " ");
                 }
                 Console.WriteLine();
             }
+        }
+        public void Info()
+        {
+            Console.WriteLine($"Определитель: {this.Determine()}");
+            Console.WriteLine($"Сумма элементов: {this.SumOfElem()}");
+            Console.WriteLine($"Хэш код: {this.GetHashCode()}");
+            Console.WriteLine($"To string: {this.ToString()}");
         }
 
         public int SumOfElem()
@@ -87,13 +106,21 @@ namespace Lab3
             {
                 for(int iCol = 0;iCol < this.Size-1; ++iCol)
                 {
-                    if(iRow >= Row)
+                    if(iRow < Row)
                     {
-                        result.Matrix[iRow, iCol] = this.Matrix[iRow + 1, iCol];
+                        result.Matrix[iRow, iCol] = this.Matrix[iRow, iCol];
                     }
-                    if(iCol >= Col)
+                    else
                     {
-                        result.Matrix[iRow, iCol] = this.Matrix[iRow, iCol + 1];
+                        result.Matrix[iRow, iCol] = this.Matrix[iRow+1, iCol];
+                    }
+                    if(iCol < Col)
+                    {
+                        result.Matrix[iRow, iCol] = this.Matrix[iRow, iCol];
+                    }
+                    else
+                    {
+                        result.Matrix[iRow, iCol] = this.Matrix[iRow, iCol+1];
                     }
                 }
             }
@@ -132,9 +159,7 @@ namespace Lab3
         }
         public int CompareTo(object o) {
 
-            if (o is SquareMatrix) {
-
-                var check = o as SquareMatrix;
+            if (o is SquareMatrix check) {
 
                 if (check.SumOfElem() > this.SumOfElem()) {
 
@@ -152,7 +177,7 @@ namespace Lab3
                 }
             }
 
-            return -1;
+            return -2;
         }
         public override bool Equals(object obj)
         {
@@ -185,9 +210,9 @@ namespace Lab3
                 throw new MatrixException("Разный размер.");
 
             var result = new SquareMatrix(a.Size);
-            for (int iRow = 0; iRow < a.Size; iRow++)
-                for (int iCol = 0; iCol < b.Size; iCol++)
-                    for (int RowCol = 0; RowCol < b.Size; RowCol++)
+            for (int iRow = 0; iRow < a.Size; ++iRow)
+                for (int iCol = 0; iCol < b.Size; ++iCol)
+                    for (int RowCol = 0; RowCol < b.Size; ++RowCol)
                         result[iRow, iCol] += a[iRow, RowCol] * b[RowCol, iCol];
 
             return result;
@@ -196,9 +221,9 @@ namespace Lab3
         public static SquareMatrix operator *(SquareMatrix a, int b)
         {
             var result = new SquareMatrix(a.Size);
-            for (int iRow = 0; iRow < a.Size; iRow++)
+            for (int iRow = 0; iRow < a.Size; ++iRow)
             {
-                for (int iCol = 0; iCol < a.Size; iCol++)
+                for (int iCol = 0; iCol < a.Size; ++iCol)
                 {
                     result[iRow, iCol] = a[iRow, iCol] * b;
                 }
@@ -262,6 +287,14 @@ namespace Lab3
                 return false;
             else
                 return true;
+        }
+        public static bool operator true(SquareMatrix a)
+        {
+            return a.SumOfElem() != 0;
+        }
+        public static bool operator false(SquareMatrix a)
+        {
+            return a.SumOfElem() == 0;
         }
     }
 }
